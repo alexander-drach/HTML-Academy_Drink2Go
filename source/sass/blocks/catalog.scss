@@ -1,7 +1,11 @@
-.catalog {
+.catalog-section {
   background-color: $lightest-grey;
   padding-top: 100px;
   padding-bottom: 120px;
+}
+
+.catalog-section .title-section {
+  margin-bottom: 40px;
 }
 
 .catalog__inner {

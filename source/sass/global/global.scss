@@ -52,3 +52,17 @@ h4 {
   line-height: 20px;
   letter-spacing: 0.28px;
 }
+
+.title-section {
+  margin-top: 0;
+  text-align: center;
+}
+
+.subtitle-section {
+  display: block;
+  margin-bottom: 4px;
+  color: $base-primary;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
