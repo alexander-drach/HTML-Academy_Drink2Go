@@ -1,6 +1,7 @@
 .filter {
   width: 320px;
   border: 1px solid gray;
+  margin-right: 30px;
 }
 
 .filter label {
@@ -90,6 +91,15 @@
 	opacity: 1;
 }
 
+.radio:disabled + label {
+	color: $base-grey;
+}
+
+.radio:disabled + label::after {
+	background-color: $base-grey;
+}
+
+
 .checkbox {
 	position: absolute;
 	z-index: -1;
@@ -132,11 +142,23 @@
 }
 
 .checkbox:checked + label:before {
-	background: $base-primary;
+	background-color: $base-primary;
 }
 
 .checkbox:checked + label:after {
 	left: 20px;
+}
+
+.checkbox:disabled + label {
+	color: $base-grey;
+}
+
+.checkbox:disabled + label:before {
+	background-color: $light-grey;
+}
+
+.checkbox:checked:disabled + label:after {
+	background-color: $base-grey;
 }
 
 .filter__control {
