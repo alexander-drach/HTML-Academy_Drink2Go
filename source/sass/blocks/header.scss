@@ -3,3 +3,97 @@
   color: #ffffff;
   padding: 10px 15px;
 }
+
+.page-header__inner {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-menu {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.main-menu__item {
+  margin-right: 20px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.main-menu__link,
+.page-header__control a {
+  display: block;
+  text-decoration: none;
+  color: $base-black;
+  padding: 32px 20px;
+  text-transform: uppercase;
+}
+
+.main-menu__link {
+  border-bottom: 2px solid transparent;
+}
+
+.main-menu__link.active {
+  border-bottom: 2px solid $base-primary;
+}
+
+.main-menu__link:hover {
+  color: $base-primary;
+  border-bottom: 2px solid transparent;
+}
+
+.main-menu__link:active {
+  color: $base-primary;
+  border-bottom: 2px solid transparent;
+  background-color: $base-secondary;
+}
+
+.page-header__control {
+  display: flex;
+  align-items: center;
+}
+
+.page-header__control a {
+  display: flex;
+  align-items: center;
+}
+
+.page-header__control a:hover {
+  color: $base-primary;
+}
+
+.page-header__control a:active {
+  color: $base-primary;
+  background-color: $base-secondary;
+}
+
+.page-header__control svg {
+  flex-shrink: 0;
+  fill: $base-black;
+  margin-right: 8px;
+}
+
+.log-in {
+  margin-right: 20px;
+}
+
+.cart {
+
+}
+
+.log-in:hover svg,
+.log-in:active svg,
+.cart:hover svg,
+.cart:active svg {
+  fill: $base-primary;
+}
