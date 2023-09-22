@@ -59,6 +59,10 @@
 }
 
 .catalog__title a:hover {
+  color: $base-primary;
+}
+
+.catalog__title a:active {
   color: $primary-darker;
 }
 
