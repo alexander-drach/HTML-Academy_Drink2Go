@@ -69,6 +69,10 @@
   margin-right: 10px;
 }
 
+.radio + label:hover::before {
+  background-color: $primary-lighter;
+}
+
 .radio + label:after {
 	content: "";
 	position: absolute;
@@ -109,6 +113,10 @@
 	background-color: $base-grey;
   margin-right: 10px;
   transition: background-color 0.3s ease;
+}
+
+.checkbox + label:hover::before {
+  background-color: $primary-lighter;
 }
 
 .checkbox + label:after {
