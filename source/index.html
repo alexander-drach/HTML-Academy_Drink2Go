@@ -1,14 +1,66 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <title>Название проекта</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body class="page__body">
-    <header class="header">Шапка</header>
 
-    <script src="./js/script.js" defer></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <title>Название проекта</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="page__body">
+
+  <header class="page-header">
+    <div class="container">
+      <div class="page-header__inner">
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="logo logo--header">
+          <picture>
+            <source srcset="img/logo-mobile.svg" media="(max-width: 767px)" />
+            <source srcset="img/logo-tablet.svg" media="(max-width: 1439px)" />
+            <img class="logo__img logo__img--header" src="img/logo.svg"
+              alt="Логотип интернет магазин кофейных напитков">
+          </picture>
+          <h1 class="logo__text logo__text--header">
+            Интернет магазин кофейных напитков
+          </h1>
+        </a>
+      </div><!-- page-header__inner -->
+    </div><!-- container -->
+  </header>
+
+  <main>
+    <div class="promo"></div>
+    <section class="features">
+      <div class="container">
+        
+      </div>
+    </section>
+    <section class="catalog"></section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="map">map</div>
+    <div class="container">
+      <div class="page-footer__inner">
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="logo logo--footer">
+          <picture>
+            <source srcset="img/logo-mobile.svg" media="(max-width: 767px)" />
+            <source srcset="img/logo-tablet.svg" media="(max-width: 1439px)" />
+            <img class="logo__img logo__img--footer" src="img/logo.svg"
+              alt="Логотип интернет магазин кофейных напитков">
+          </picture>
+          <div class="logo__text logo__text--footer">
+            Интернет магазин кофейных напитков
+          </div>
+        </a>
+      </div><!-- page-footer__inner -->
+    </div><!-- container -->
+    <div class="copyright">
+      <p>Разработано в <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a></p>
+    </div>
+  </footer>
+
+  <script src="./js/script.js" defer></script>
+</body>
+
 </html>

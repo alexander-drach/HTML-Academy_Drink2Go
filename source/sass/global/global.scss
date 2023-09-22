@@ -1,1 +1,56 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+button,
+input[type="submit"],
+input[type="reset"] {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+a {
+  transition: all 0.3s ease;
+}
+
+h1 {}
+
+h2 {
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px;
+
+}
+
+h3 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+
+}
+
+h4 {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.28px;
+}

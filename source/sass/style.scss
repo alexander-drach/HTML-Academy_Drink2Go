@@ -2,6 +2,17 @@
 @import "global/variables";
 @import "global/global";
 @import "global/fonts";
+@import "global/buttons";
 
 /* BLOCKS */
 @import "blocks/header";
+@import "blocks/footer";
+
+@import "blocks/promo";
+@import "blocks/features";
+@import "blocks/catalog";
+
+@import "blocks/logo";
+@import "blocks/filter";
+@import "blocks/sort";
+@import "blocks/pager";

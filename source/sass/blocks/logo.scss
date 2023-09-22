@@ -1,0 +1,35 @@
+.logo {
+  flex-shrink: 0;
+  text-decoration: none;
+  color: $base-black;
+
+  &--header {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.logo__img {
+  &--header {
+    margin-right: 20px;
+    flex-shrink: 0;
+  }
+
+  &--footer {
+    margin-bottom: 10px;
+  }
+}
+
+.logo__text {
+  &--header {
+    max-width: 140px;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+  }
+
+  &--footer {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
