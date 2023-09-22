@@ -74,7 +74,63 @@
         </ul><!-- features__list -->
       </div>
     </section>
-    <section class="catalog"></section>
+    <section class="catalog">
+      <div class="container">
+        <div class="catalog__inner">
+          <aside class="filter">
+            <fieldset class="filter__group">
+              <legend class="filter__title">Цена</legend>
+            </fieldset>
+            <fieldset class="filter__group">
+              <legend class="filter__title">Наличие молока</legend>
+              <div class="radio-item">
+                <input class="radio" id="no_matter" type="radio" name="milk" value="no_matter">
+                <label for="no_matter">Неважно</label>
+              </div>
+              <div class="radio-item">
+                <input class="radio" id="animal" type="radio" name="milk" value="animal">
+                <label for="animal">Только животное</label>
+              </div>
+              <div class="radio-item">
+                <input class="radio" id="vegetable" type="radio" name="milk" value="vegetable">
+                <label for="vegetable">Только растительное</label>
+              </div>
+              <div class="radio-item">
+                <input class="radio" id="without_milk" type="radio" name="milk" value="without_milk">
+                <label for="without_milk">Без молока</label>
+              </div>
+            </fieldset>
+            <fieldset class="filter__group">
+              <legend class="filter__title">Страна произрастания</legend>
+              <div class="checkbox-item">
+                <input class="checkbox" id="brazil" type="checkbox" name="Brazil">
+                <label for="brazil">Бразилия</label>
+              </div>
+              <div class="checkbox-item">
+                <input class="checkbox" id="ethiopia" type="checkbox" name="Ethiopia">
+                <label for="ethiopia">Эфиопия</label>
+              </div>
+              <div class="checkbox-item">
+                <input class="checkbox" id="colombia" type="checkbox" name="Colombia">
+                <label for="colombia">Колумбия</label>
+              </div>
+              <div class="checkbox-item">
+                <input class="checkbox" id="costa_rica" type="checkbox" name="Costa_Rica">
+                <label for="costa_rica">Коста-Рика</label>
+              </div>
+              <div class="checkbox-item">
+                <input class="checkbox" id="peru" type="checkbox" name="Peru">
+                <label for="peru">Перу</label>
+              </div>
+            </fieldset>
+            <div class="filter__control">
+              <input class="btn btn--primary btn--fz16" type="submit" name="submit" value="Применить">
+              <input class="btn btn--secondary btn--fz16" type="reset" name="reset" value="Сбросить">
+            </div><!-- filter__control -->
+          </aside>
+        </div><!-- catalog__inner -->
+      </div><!-- container -->
+    </section>
   </main>
 
   <footer class="page-footer">
@@ -95,7 +151,8 @@
       </div><!-- page-footer__inner -->
     </div><!-- container -->
     <div class="copyright">
-      <p>Разработано в <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a></p>
+      <p>Разработано в <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML
+          Academy</a></p>
     </div>
   </footer>
 
