@@ -1,4 +1,7 @@
-.filter {}
+.filter {
+  width: 320px;
+  border: 1px solid gray;
+}
 
 .filter label {
   color: $base-black;
@@ -126,4 +129,17 @@
 
 .checkbox:checked + label:after {
 	left: 20px;
+}
+
+.filter__control {
+  display: flex;
+}
+
+.filter__control .btn--submit {
+ flex: 1;
+  margin-right: 20px;
+}
+
+.filter__control .btn--reset {
+ flex: 1;
 }
