@@ -19,7 +19,7 @@ img {
   padding: 0 20px;
   margin: 0 auto;
 
-  @include breakpoint(tablet) {
+  @include breakpoint(desktop) {
     padding: 0 40px;
   }
 }
