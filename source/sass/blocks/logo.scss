@@ -7,6 +7,11 @@
   &--header {
     display: flex;
     align-items: center;
+    margin-right: auto;
+
+    @include breakpoint(tablet) {
+      margin-right: 0;
+    }
   }
 
   &--footer {
@@ -17,9 +22,12 @@
 }
 
 .logo__img {
+  flex-shrink: 0;
+
   &--header {
-    margin-right: 20px;
-    flex-shrink: 0;
+    @include breakpoint(desktop) {
+      margin-right: 20px;
+    }
   }
 
   &--footer {

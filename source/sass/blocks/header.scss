@@ -1,33 +1,67 @@
 .page-header {
-  background-color: #663399;
-  color: #ffffff;
-  padding: 10px 15px;
-  display: none;
+  position: relative;
 }
-
 .page-header__inner {
   display: flex;
   align-items: center;
 }
 
 .nav {
-  margin-left: auto;
-  margin-right: auto;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: $base-white;
+  z-index: 50;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+
+  @include breakpoint(tablet) {
+    position: relative;
+    top: 0;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .main-menu {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   list-style-type: none;
+  text-align: center;
+  font-size: 12px;
   margin: 0;
   padding-left: 0;
+
+  @include breakpoint(tablet) {
+    flex-direction: row;
+  }
 }
 
 .main-menu__item {
-  margin-right: 20px;
+  width: 100%;
+  border-top: 1px solid $base-secondary;
+
+  @include breakpoint(tablet) {
+    border-top: none;
+    width: auto;
+  }
+
+  @include breakpoint(desktop) {
+    margin-right: 20px;
+  }
 
   &:last-child {
     margin-right: 0;
+    border-bottom: 1px solid $base-secondary;
+
+    @include breakpoint(tablet) {
+      border-bottom: none;
+    }
   }
 }
 
@@ -36,8 +70,13 @@
   display: block;
   text-decoration: none;
   color: $base-black;
-  padding: 32px 20px;
+  font-weight: 500;
+  padding: 22px;
   text-transform: uppercase;
+
+  @include breakpoint(tablet) {
+    padding: 32px 20px;
+  }
 }
 
 .main-menu__link {
@@ -67,6 +106,11 @@
 .page-header__control a {
   display: flex;
   align-items: center;
+  font-size: 0;
+
+  @include breakpoint(desktop) {
+    font-size: 12px;
+  }
 }
 
 .page-header__control a:hover {
@@ -81,20 +125,39 @@
 .page-header__control svg {
   flex-shrink: 0;
   fill: $base-black;
-  margin-right: 8px;
+
+  @include breakpoint(desktop) {
+    margin-right: 8px;
+  }
 }
 
 .log-in {
-  margin-right: 20px;
+  @include breakpoint(desktop) {
+    margin-right: 20px;
+  }
 }
 
-.cart {
-
-}
+.cart {}
 
 .log-in:hover svg,
 .log-in:active svg,
 .cart:hover svg,
 .cart:active svg {
   fill: $base-primary;
+}
+
+.humb {
+  width: 60px;
+  height: 60px;
+  font-size: 0;
+  border: none;
+
+  @include breakpoint(tablet) {
+    display: none;
+  }
+}
+
+.page-header.open-menu .nav{
+  opacity: 1;
+  pointer-events: all;
 }
