@@ -149,17 +149,39 @@
 }
 
 .humb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 60px;
   height: 60px;
   font-size: 0;
   border: none;
+  background-color: transparent;
 
   @include breakpoint(tablet) {
     display: none;
   }
 }
 
-.page-header.open-menu .nav{
+.humb .icon-close {
+  display: none;
+}
+
+.open-menu .nav {
   opacity: 1;
   pointer-events: all;
+}
+
+.open-menu .icon-close {
+  display: block;
+}
+
+.open-menu .icon-humb {
+  display: none;
+}
+
+.page-header .container {
+  @media (max-width: 767px) {
+    padding-right: 0;
+  }
 }
