@@ -10,7 +10,9 @@
   }
 
   &--footer {
-    margin-bottom: 50px;
+    @include breakpoint(desktop) {
+      margin-bottom: 50px;
+    }
   }
 }
 
@@ -21,11 +23,20 @@
   }
 
   &--footer {
-    margin-bottom: 10px;
+    @include breakpoint(desktop) {
+      margin-bottom: 10px;
+    }
   }
 }
 
 .logo__text {
+  display: none;
+  text-transform: none;
+
+  @include breakpoint(desktop) {
+    display: block;
+  }
+
   &--header {
     max-width: 140px;
     font-size: 12px;

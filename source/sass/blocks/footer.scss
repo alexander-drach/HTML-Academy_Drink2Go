@@ -1,6 +1,9 @@
 .page-footer {
-  padding-bottom: 40px;
-  display: none;
+  padding-bottom: 30px;
+
+  @include breakpoint(tablet) {
+    padding-bottom: 40px;
+  }
 }
 
 .copyright {
@@ -28,12 +31,51 @@
 }
 
 .page-footer__inner {
-  display: flex;
+  @include breakpoint(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .footer__block {
-  width: 25%;
-  padding-right: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid $base-secondary;
+
+  @include breakpoint(tablet) {
+    width: calc(100% / 3);
+    padding-left: 0;
+    padding-right: 30px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  @include breakpoint(desktop) {
+    width: 25%;
+  }
+
+  &:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include breakpoint(tablet) {
+      width: 100%;
+      padding-right: 0;
+      margin-bottom: 30px;
+    }
+
+    @include breakpoint(desktop) {
+      display: block;
+      width: 25%;
+    }
+  }
 
   &:last-child {
     padding-right: 0;
@@ -87,15 +129,16 @@
 }
 
 .page-footer__address {
+  font-style: normal;
   color: $base-black;
   margin-bottom: 16px;
 }
 
-.page-footer__phone {
-}
+.page-footer__phone {}
 
 .social {
   display: flex;
+  align-items: center;
 }
 
 .social a {
