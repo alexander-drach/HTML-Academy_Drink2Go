@@ -16,8 +16,12 @@ img {
 
 .container {
   max-width: 1440px;
-  padding: 0 40px;
+  padding: 0 20px;
   margin: 0 auto;
+
+  @include breakpoint(tablet) {
+    padding: 0 40px;
+  }
 }
 
 button,
@@ -32,17 +36,25 @@ a {
 }
 
 h2 {
-  font-size: 42px;
-  font-style: normal;
+  font-size: 24px;
   font-weight: 700;
-  line-height: 64px;
+  line-height: 36px;
+
+  @include breakpoint(tablet) {
+    font-size: 42px;
+    line-height: 64px;
+  }
 }
 
 h3 {
-  font-size: 24px;
-  font-style: normal;
+  font-size: 18px;
   font-weight: 700;
-  line-height: 36px;
+  line-height: 32px;
+
+  @include breakpoint(tablet) {
+    font-size: 24px;
+    line-height: 36px;
+  }
 }
 
 h4 {
