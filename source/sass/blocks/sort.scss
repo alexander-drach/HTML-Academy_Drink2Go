@@ -1,7 +1,11 @@
 .sort {
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 26px;
+  margin-bottom: 16px;
+
+  @include breakpoint(tablet) {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 26px;
+  }
 }
 
 .sort__form {
