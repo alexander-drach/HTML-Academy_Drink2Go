@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <title>Drink2Go Интернет магазин кофейных напитков</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -67,7 +69,115 @@
   </header>
 
   <main>
-    <div class="promo"></div>
+    <div class="promo">
+      <div class="container">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+
+            <div class="promo__item swiper-slide">
+              <div class="promo__inner">
+                <div class="promo__thumb">
+                  <picture>
+                    <source srcset="img/promo/slide-1_mobile.png" media="(max-width: 767px)" />
+                    <source srcset="img/promo/slide-1_tablet.png" media="(max-width: 1439px)" />
+                    <img class="" src="img/promo/slide-1_desktop.png" alt="Логотип интернет магазин кофейных напитков">
+                  </picture>
+                </div><!-- promo__thumb -->
+                <div class="promo__content">
+                  <span class="promo__badge">Новинка</span>
+                  <h2 class="promo__title">Декаф Флэт Уайт</h2>
+                  <div class="promo__desc">
+                    Свежесваренный кофе без кофеина из Эфиопии
+                    с натуральным фермерским молоком — то, что нужно
+                    для расслабления после тяжёлого рабочего дня
+                  </div><!-- promo__desc -->
+                  <div class="promo__order">
+                    <div class="promo__old-price">
+                      <span>295</span>&#8381;
+                    </div>
+                    <div class="promo__price">
+                      <span>225</span>&#8381;
+                    </div>
+                    <button class="btn btn--primary btn--fz16">Заказать</button>
+                  </div><!-- promo__order -->
+                </div><!-- promo__content -->
+              </div><!-- promo__inner -->
+            </div><!-- promo__item -->
+
+            <div class="promo__item swiper-slide">
+              <div class="promo__inner">
+                <div class="promo__thumb">
+                  <picture>
+                    <source srcset="img/promo/slide-2_mobile.png" media="(max-width: 767px)" />
+                    <source srcset="img/promo/slide-2_tablet.png" media="(max-width: 1439px)" />
+                    <img class="" src="img/promo/slide-2_desktop.png" alt="Логотип интернет магазин кофейных напитков">
+                  </picture>
+                </div><!-- promo__thumb -->
+                <div class="promo__content">
+                  <span class="promo__badge">Новинка</span>
+                  <h2 class="promo__title">Декаф Флэт Уайт</h2>
+                  <div class="promo__desc">
+                    Свежесваренный кофе без кофеина из Эфиопии
+                    с натуральным фермерским молоком — то, что нужно
+                    для расслабления после тяжёлого рабочего дня
+                  </div><!-- promo__desc -->
+                  <div class="promo__order">
+                    <div class="promo__old-price">
+                      <span>295</span>&#8381;
+                    </div>
+                    <div class="promo__price">
+                      <span>225</span>&#8381;
+                    </div>
+                    <button class="btn btn--primary btn--fz16">Заказать</button>
+                  </div><!-- promo__order -->
+                </div><!-- promo__content -->
+              </div><!-- promo__inner -->
+            </div><!-- promo__item -->
+
+            <div class="promo__item swiper-slide">
+              <div class="promo__inner">
+                <div class="promo__thumb">
+                  <picture>
+                    <source srcset="img/promo/slide-3_mobile.png" media="(max-width: 767px)" />
+                    <source srcset="img/promo/slide-3_tablet.png" media="(max-width: 1439px)" />
+                    <img class="" src="img/promo/slide-3_desktop.png" alt="Логотип интернет магазин кофейных напитков">
+                  </picture>
+                </div><!-- promo__thumb -->
+                <div class="promo__content">
+                  <span class="promo__badge">Новинка</span>
+                  <h2 class="promo__title">Декаф Флэт Уайт</h2>
+                  <div class="promo__desc">
+                    Свежесваренный кофе без кофеина из Эфиопии
+                    с натуральным фермерским молоком — то, что нужно
+                    для расслабления после тяжёлого рабочего дня
+                  </div><!-- promo__desc -->
+                  <div class="promo__order">
+                    <div class="promo__old-price">
+                      <span>295</span>&#8381;
+                    </div>
+                    <div class="promo__price">
+                      <span>225</span>&#8381;
+                    </div>
+                    <button class="btn btn--primary btn--fz16">Заказать</button>
+                  </div><!-- promo__order -->
+                </div><!-- promo__content -->
+              </div><!-- promo__inner -->
+
+            </div><!-- promo__item -->
+
+          </div><!-- swiper-wrapper -->
+          <!-- Pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- Navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div><!-- swiper -->
+      </div>
+    </div>
+
     <section class="features-section">
       <div class="container">
         <h2 class="title-section">
@@ -130,6 +240,7 @@
         </ul><!-- features__list -->
       </div>
     </section>
+
     <section class="catalog-section">
       <div class="container">
         <h2 class="title-section">
@@ -448,6 +559,7 @@
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script src="./js/script.js" defer></script>
 </body>
 

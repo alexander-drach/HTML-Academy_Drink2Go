@@ -1,3 +1,98 @@
 .promo {
+  background-color: $flat-white;
+  padding-top: 20px;
+  padding-bottom: 60px;
 
+  @include breakpoint(tablet) {
+    padding-top: 60px;
+    padding-bottom: 0;
+  }
+
+  @include breakpoint(desktop) {
+    padding-top: 30px;
+    padding-bottom: 84px;
+  }
+}
+
+.promo__item {}
+
+.promo__inner {}
+
+.promo__thumb {}
+
+.promo__content {}
+
+.promo__badge {
+  color: $base-primary;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+}
+
+.promo__title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0.72px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+
+  @include breakpoint(tablet) {
+    font-size: 56px;
+    line-height: 80px;
+    letter-spacing: 1.12px;
+    margin-bottom: 16px;
+  }
+
+  @include breakpoint(desktop) {
+    font-size: 56px;
+    line-height: 80px;
+  }
+}
+
+.promo__desc {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 20px;
+
+  @include breakpoint(tablet) {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  @include breakpoint(desktop) {
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 40px;
+  }
+}
+
+.promo__order {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include breakpoint(desktop) {
+    justify-content: flex-start;
+  }
+}
+
+.promo__old-price {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  text-decoration: line-through;
+  color: $base-primary;
+  margin-right: 6px;
+}
+
+.promo__price {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 32px;
+  color: $base-black;
+  margin-right: 20px;
 }
