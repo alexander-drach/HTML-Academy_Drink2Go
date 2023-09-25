@@ -81,7 +81,7 @@
   cursor: pointer;
 }
 
-.radio + label:before {
+.radio + label::before {
   content: "";
   flex-shrink: 0;
   width: 24px;
@@ -92,7 +92,7 @@
   margin-right: 10px;
 }
 
-.radio + label:after {
+.radio + label::after {
   content: "";
   position: absolute;
   top: 6px;
@@ -111,11 +111,11 @@
 }
 
 .radio:checked + label:hover::after {
-  background-color:$base-primary;
+  background-color: $base-primary;
   opacity: 1;
 }
 
-.radio:checked + label:after {
+.radio:checked + label::after {
   opacity: 1;
 }
 
@@ -141,7 +141,7 @@
   cursor: pointer;
 }
 
-.checkbox + label:before {
+.checkbox + label::before {
   content: "";
   flex-shrink: 0;
   width: 42px;
@@ -156,7 +156,7 @@
   background-color: $primary-lighter;
 }
 
-.checkbox + label:after {
+.checkbox + label::after {
   content: "";
   position: absolute;
   top: 3px;
@@ -168,11 +168,11 @@
   transition: left 0.2s ease;
 }
 
-.checkbox:checked + label:before {
+.checkbox:checked + label::before {
   background-color: $base-primary;
 }
 
-.checkbox:checked + label:after {
+.checkbox:checked + label::after {
   left: 20px;
 }
 
@@ -180,11 +180,11 @@
   color: $base-grey;
 }
 
-.checkbox:disabled + label:before {
+.checkbox:disabled + label::before {
   background-color: $light-grey;
 }
 
-.checkbox:checked:disabled + label:after {
+.checkbox:checked:disabled + label::after {
   background-color: $base-grey;
 }
 
