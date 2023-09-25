@@ -87,7 +87,8 @@
                   <span class="promo__badge">Новинка</span>
                   <h2 class="promo__title">Декаф Флэт Уайт</h2>
                   <div class="promo__desc">
-                    Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня
+                    Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для
+                    расслабления после тяжёлого рабочего дня
                   </div><!-- promo__desc -->
                   <div class="promo__order">
                     <div class="promo__old-price">
@@ -115,7 +116,8 @@
                   <span class="promo__badge">Новинка</span>
                   <h2 class="promo__title">Лавандовый Латте</h2>
                   <div class="promo__desc">
-                    Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор
+                    Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас
+                    прямо на вершину Радужных гор
                   </div><!-- promo__desc -->
                   <div class="promo__order">
                     <div class="promo__old-price">
@@ -143,7 +145,8 @@
                   <span class="promo__badge">Новинка</span>
                   <h2 class="promo__title">Тройной Эспрессо</h2>
                   <div class="promo__desc">
-                    Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость
+                    Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам,
+                    что такое настоящая бодрость
                   </div><!-- promo__desc -->
                   <div class="promo__order">
                     <div class="promo__old-price">
@@ -205,7 +208,8 @@
           </li>
           <li class="features__item">
             <div class="features__icon">
-              <img src="img/icons/stack.svg#icon-cheerfulness" width="50" height="56" alt="Иконка описания бодрости баланса кофеина">
+              <img src="img/icons/stack.svg#icon-cheerfulness" width="50" height="56"
+                alt="Иконка описания бодрости баланса кофеина">
             </div>
             <div class="features__content">
               <h3 class="features__title">Бодрость</h3>
@@ -218,7 +222,8 @@
           </li>
           <li class="features__item">
             <div class="features__icon">
-              <img src="img/icons/stack.svg#icon-eco" width="50" height="56" alt="Иконка экологичности, перерабатываемый материал упаковки">
+              <img src="img/icons/stack.svg#icon-eco" width="50" height="56"
+                alt="Иконка экологичности, перерабатываемый материал упаковки">
             </div>
             <div class="features__content">
               <h3 class="features__title">Экологичность</h3>
@@ -242,66 +247,70 @@
         <div class="catalog__inner">
           <aside class="filter">
             <form class="filter" action="https://echo.htmlacademy.ru" name="form_filter" method="post">
-            <fieldset class="filter__group">
-              <legend class="filter__title">Цена</legend>
-              <div class="range">
-                <div class="range__track">
-                  <input type="range" min="0" step="1" max="1000" name="min" value="0">
-                  <input type="range" min="0" step="1" max="1000" name="max" value="900">
+              <fieldset class="filter__group">
+                <legend class="filter__title">Цена</legend>
+                <div class="range">
+                  <div class="range__bar">
+                    <div class="range__track"></div>
+                    <div class="range__progress"></div>
+                    <button class="range__btn range__btn--min" type="button">от</button>
+                    <button class="range__btn range__btn--max" type="button">до</button>
+                    <!-- <input id="from" type="range" min="0" step="1" max="1000" name="min" value="0"> -->
+                    <!-- <input type="range" min="0" step="1" max="1000" name="max" value="900"> -->
+                  </div>
+                  <div class="range__values">
+                    <input id="range-from" class="range__value range__value--from" type="text" placeholder="0">
+                    <span class="range__separator"></span>
+                    <input id="range-to" class="range__value range__value--to" type="text" value="900">
+                  </div>
+                </div><!-- range -->
+              </fieldset>
+              <fieldset class="filter__group">
+                <legend class="filter__title">Наличие молока</legend>
+                <div class="radio-item">
+                  <input class="radio" id="no_matter" type="radio" name="milk" value="no_matter">
+                  <label for="no_matter">Неважно</label>
                 </div>
-                <div class="range__values">
-                  <input id="range-from" class="range__value range__value--from" type="text" placeholder="0">
-                  <span class="range__separator"></span>
-                  <input id="range-to" class="range__value range__value--to" type="text" value="900">
+                <div class="radio-item">
+                  <input class="radio" id="animal" type="radio" name="milk" value="animal">
+                  <label for="animal">Только животное</label>
                 </div>
-              </div><!-- range -->
-            </fieldset>
-            <fieldset class="filter__group">
-              <legend class="filter__title">Наличие молока</legend>
-              <div class="radio-item">
-                <input class="radio" id="no_matter" type="radio" name="milk" value="no_matter">
-                <label for="no_matter">Неважно</label>
-              </div>
-              <div class="radio-item">
-                <input class="radio" id="animal" type="radio" name="milk" value="animal">
-                <label for="animal">Только животное</label>
-              </div>
-              <div class="radio-item">
-                <input class="radio" id="vegetable" type="radio" name="milk" value="vegetable">
-                <label for="vegetable">Только растительное</label>
-              </div>
-              <div class="radio-item">
-                <input disabled class="radio" id="without_milk" type="radio" name="milk" value="without_milk">
-                <label for="without_milk">Без молока</label>
-              </div>
-            </fieldset>
-            <fieldset class="filter__group">
-              <legend class="filter__title">Страна произрастания</legend>
-              <div class="checkbox-item">
-                <input class="checkbox" id="brazil" type="checkbox" name="Brazil">
-                <label for="brazil">Бразилия</label>
-              </div>
-              <div class="checkbox-item">
-                <input class="checkbox" id="ethiopia" type="checkbox" name="Ethiopia">
-                <label for="ethiopia">Эфиопия</label>
-              </div>
-              <div class="checkbox-item">
-                <input class="checkbox" id="colombia" type="checkbox" name="Colombia">
-                <label for="colombia">Колумбия</label>
-              </div>
-              <div class="checkbox-item">
-                <input disabled class="checkbox" id="costa_rica" type="checkbox" name="Costa_Rica">
-                <label for="costa_rica">Коста-Рика</label>
-              </div>
-              <div class="checkbox-item">
-                <input checked disabled class="checkbox" id="peru" type="checkbox" name="Peru">
-                <label for="peru">Перу</label>
-              </div>
-            </fieldset>
-            <div class="filter__control">
-              <button class="btn btn--submit btn--primary btn--fz16" type="submit" name="submit">Применить</button>
-              <button class="btn btn--reset btn--secondary btn--fz16" type="reset" name="reset">Сбросить</button>
-            </div><!-- filter__control -->
+                <div class="radio-item">
+                  <input class="radio" id="vegetable" type="radio" name="milk" value="vegetable">
+                  <label for="vegetable">Только растительное</label>
+                </div>
+                <div class="radio-item">
+                  <input disabled class="radio" id="without_milk" type="radio" name="milk" value="without_milk">
+                  <label for="without_milk">Без молока</label>
+                </div>
+              </fieldset>
+              <fieldset class="filter__group">
+                <legend class="filter__title">Страна произрастания</legend>
+                <div class="checkbox-item">
+                  <input class="checkbox" id="brazil" type="checkbox" name="Brazil">
+                  <label for="brazil">Бразилия</label>
+                </div>
+                <div class="checkbox-item">
+                  <input class="checkbox" id="ethiopia" type="checkbox" name="Ethiopia">
+                  <label for="ethiopia">Эфиопия</label>
+                </div>
+                <div class="checkbox-item">
+                  <input class="checkbox" id="colombia" type="checkbox" name="Colombia">
+                  <label for="colombia">Колумбия</label>
+                </div>
+                <div class="checkbox-item">
+                  <input disabled class="checkbox" id="costa_rica" type="checkbox" name="Costa_Rica">
+                  <label for="costa_rica">Коста-Рика</label>
+                </div>
+                <div class="checkbox-item">
+                  <input checked disabled class="checkbox" id="peru" type="checkbox" name="Peru">
+                  <label for="peru">Перу</label>
+                </div>
+              </fieldset>
+              <div class="filter__control">
+                <button class="btn btn--submit btn--primary btn--fz16" type="submit" name="submit">Применить</button>
+                <button class="btn btn--reset btn--secondary btn--fz16" type="reset" name="reset">Сбросить</button>
+              </div><!-- filter__control -->
             </form>
           </aside>
           <div class="catalog__content">
