@@ -6,7 +6,7 @@
   <title>Drink2Go Интернет магазин кофейных напитков</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-
+  <link href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -251,12 +251,13 @@
         </h2>
         <div class="catalog__inner">
           <aside class="filter">
+            <form class="filter" action="https://echo.htmlacademy.ru" name="form_filter" method="post">
             <fieldset class="filter__group">
               <legend class="filter__title">Цена</legend>
               <div class="range">
                 <div class="range__track">
-                  <input type="range" min="0" step="1" max="1000" value="0">
-                  <input type="range" min="0" step="1" max="1000" value="900">
+                  <input type="range" min="0" step="1" max="1000" name="min" value="0">
+                  <input type="range" min="0" step="1" max="1000" name="max" value="900">
                 </div>
                 <div class="range__values">
                   <input id="range-from" class="range__value range__value--from" type="text" placeholder="0">
@@ -308,13 +309,14 @@
               </div>
             </fieldset>
             <div class="filter__control">
-              <input class="btn btn--submit btn--primary btn--fz16" type="submit" name="submit" value="Применить">
-              <input class="btn btn--reset btn--secondary btn--fz16" type="reset" name="reset" value="Сбросить">
+              <button class="btn btn--submit btn--primary btn--fz16" type="submit" name="submit">Применить</button>
+              <button class="btn btn--reset btn--secondary btn--fz16" type="reset" name="reset">Сбросить</button>
             </div><!-- filter__control -->
+            </form>
           </aside>
           <div class="catalog__content">
             <div class="sort">
-              <form class="sort__form" action="https://echo.htmlacademy.ru" name="form-sort">
+              <form class="sort__form" action="https://echo.htmlacademy.ru" name="form-sort" method="get">
                 <label class="sort__label" for="sort">Сортировка:</label>
                 <select id="sort">
                   <option selected>по умолчанию</option>
@@ -573,6 +575,7 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
   <script src="./js/script.js" defer></script>
 </body>
 

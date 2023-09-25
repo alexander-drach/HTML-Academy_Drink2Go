@@ -22,7 +22,6 @@ const swiper = new Swiper('.swiper', {
 });
 
 /* range */
-
 const sliders = document.querySelectorAll('input[type="range"]');
 const valueRangeFrom = document.getElementById('range-from');
 const valueRangeTo = document.getElementById('range-to');
@@ -45,3 +44,31 @@ sliders.forEach((slider) => {
     valueRangeTo.value = sliders[1].value;
   })
 });
+
+/* map */
+let geo_lon = 59.9684;
+let geo_lat = 30.3176;
+
+let element = document.getElementById('map');
+let map = L.map(element);
+
+L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="<http://osm.org/copyright>">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+let target = L.latLng(geo_lon,geo_lat);
+
+map.setView(target, 18);
+
+const iconOptions = {
+  iconUrl: 'img/marker-map.svg',
+  iconSize: [38, 50],
+}
+
+const customIcon = L.icon(iconOptions);
+
+let markerOptions = {
+  icon: customIcon
+}
+
+L.marker(target, markerOptions).addTo(map);
