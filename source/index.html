@@ -253,6 +253,17 @@
           <aside class="filter">
             <fieldset class="filter__group">
               <legend class="filter__title">Цена</legend>
+              <div class="range">
+                <div class="range__track">
+                  <input type="range" min="0" step="1" max="1000" value="0">
+                  <input type="range" min="0" step="1" max="1000" value="900">
+                </div>
+                <div class="range__values">
+                  <input id="range-from" class="range__value range__value--from" type="text" placeholder="0">
+                  <span class="range__separator"></span>
+                  <input id="range-to" class="range__value range__value--to" type="text" value="900">
+                </div>
+              </div><!-- range -->
             </fieldset>
             <fieldset class="filter__group">
               <legend class="filter__title">Наличие молока</legend>
@@ -466,7 +477,7 @@
   </main>
 
   <footer class="page-footer">
-    <div class="map">map</div>
+    <div id="map" class="map">map</div>
     <div class="container">
       <div class="page-footer__inner">
         <div class="footer__block">
