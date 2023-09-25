@@ -31,21 +31,21 @@ input[type="range"]::-ms-thumb {
   pointer-events: all;
 }
 
-input[type=range]::-webkit-slider-runnable-track {
+input[type="range"]::-webkit-slider-runnable-track {
   border-radius: 0;
   height: 2px;
   border: none;
   background: $light-grey;
 }
 
-input[type=range]::-moz-range-track {
+input[type="range"]::-moz-range-track {
   border-radius: 0;
   height: 2px;
   border: none;
   background: $light-grey;
 }
 
-input[type=range]::-webkit-slider-thumb {
+input[type="range"]::-webkit-slider-thumb {
   position: relative;
   background: $base-white;
   border: 2px solid $primary-lighter;
@@ -58,7 +58,7 @@ input[type=range]::-webkit-slider-thumb {
   z-index: 3;
 }
 
-input[type=range]::-moz-range-thumb {
+input[type="range"]::-moz-range-thumb {
   position: relative;
   background: $base-white;
   border: 2px solid $primary-lighter;

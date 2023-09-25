@@ -27,13 +27,13 @@ const valueRangeFrom = document.getElementById('range-from');
 const valueRangeTo = document.getElementById('range-to');
 
 sliders[0].addEventListener('input', (e) => {
- if(+sliders[0].value > +sliders[1].value){
+  if (+sliders[0].value > +sliders[1].value) {
     sliders[1].value = +sliders[0].value;
   }
 });
 
 sliders[1].addEventListener('input', (e) => {
- if(+sliders[1].value < +sliders[0].value){
+  if (+sliders[1].value < +sliders[0].value) {
     sliders[0].value = +sliders[1].value;
   }
 });
@@ -53,10 +53,10 @@ let element = document.getElementById('map');
 let map = L.map(element);
 
 L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="<http://osm.org/copyright>">OpenStreetMap</a> contributors'
+  attribution: '&copy; <a href="<http://osm.org/copyright>">OpenStreetMap</a> contributors'
 }).addTo(map);
 
-let target = L.latLng(geo_lon,geo_lat);
+let target = L.latLng(geo_lon, geo_lat);
 
 map.setView(target, 18);
 

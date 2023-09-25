@@ -158,7 +158,7 @@
   border: none;
   background-color: transparent;
   transition: background-image 0.3s ease;
-  background-image: url(../../img/icons/stack.svg#icon-humb);
+  background-image: url("../../img/icons/stack.svg#icon-humb");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 16px;
@@ -174,7 +174,7 @@
 }
 
 .open-menu .humb {
-  background-image: url(../../img/icons/stack.svg#icon-close);
+  background-image: url("../../img/icons/stack.svg#icon-close");
   background-size: 16px;
 }
 
