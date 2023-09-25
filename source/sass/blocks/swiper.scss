@@ -1,6 +1,26 @@
 .swiper-horizontal {
   height: 100%;
-  padding-bottom: 24px;
+  padding-top: 20px;
+  padding-bottom: 60px;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include breakpoint(tablet) {
+    padding-top: 60px;
+    padding-bottom: 0;
+    transform: translateY(190px);
+  }
+
+  @include breakpoint(desktop) {
+    padding-top: 30px;
+    padding-bottom: 84px;
+    transform: none;
+  }
+
+  @include breakpoint(desktop) {
+    padding-bottom: 24px;
+  }
 
   .swiper-pagination-bullet {
     position: relative;
@@ -43,4 +63,38 @@
     }
   }
 
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 20px;
+    height: 100%;
+    top: 20px;
+
+    @include breakpoint(tablet) {
+      width: 80px;
+    }
+  }
+
+  .swiper-button-prev {
+    left: 0;
+
+    &:hover {
+      background: linear-gradient(90deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
+    }
+
+    &:active {
+      background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0.00) 100%);
+    }
+  }
+
+  .swiper-button-next {
+    right: 0;
+
+    &:hover {
+      background: linear-gradient(270deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
+    }
+
+    &:active {
+      background: linear-gradient(270deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0.00) 100%);
+    }
+  }
 }

@@ -1,20 +1,32 @@
-.promo {
-  background-color: $flat-white;
-  padding-top: 20px;
-  padding-bottom: 60px;
-
+.promo-wrapper {
   @include breakpoint(tablet) {
-    padding-top: 60px;
-    padding-bottom: 0;
+    padding-bottom: 190px;
+    margin-top: -190px;
   }
 
   @include breakpoint(desktop) {
-    padding-top: 30px;
-    padding-bottom: 84px;
+    padding-bottom: 0;
+    margin-top: 0;
   }
 }
 
-.promo__item {}
+.promo {
+  background-color: $flat-white;
+
+  @include breakpoint(desktop) {
+    padding-bottom: 60px;
+  }
+}
+
+.promo__item {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @include breakpoint(tablet) {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
 
 .promo__inner {
   display: flex;
