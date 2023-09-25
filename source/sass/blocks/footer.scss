@@ -101,7 +101,7 @@
   margin-bottom: 4px;
 }
 
-.footer__block a {
+.footer-menu__link {
   display: block;
   font-size: 12px;
   font-weight: 500;
@@ -129,12 +129,44 @@
 }
 
 .page-footer__address {
+  display: flex;
   font-style: normal;
   color: $base-black;
   margin-bottom: 16px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 16px;
+    flex-shrink: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("../../img/icons/stack.svg#icon-geo");
+    margin-right: 6px;
+    margin-top: 1px;
+  }
 }
 
-.page-footer__phone {}
+.page-footer__phone {
+  display: flex;
+  align-items: center;
+  color: $base-black;
+  text-decoration: none;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 16px;
+    flex-shrink: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("../../img/icons/stack.svg#icon-phone");
+    margin-right: 6px;
+    margin-top: 1px;
+  }
+}
 
 .social {
   display: flex;

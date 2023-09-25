@@ -39,7 +39,6 @@
 
 .logo__text {
   display: none;
-  text-transform: none;
 
   @include breakpoint(desktop) {
     display: block;
