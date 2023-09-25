@@ -1,13 +1,13 @@
 .filter {
   margin-bottom: 36px;
 
-  @include breakpoint(tablet) {
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 44px;
   }
 
-  @include breakpoint(desktop) {
+  @media screen and (min-width: 1440px) {
     display: block;
     width: 320px;
     margin-right: 30px;
@@ -26,13 +26,13 @@
   padding: 0;
   margin-bottom: 34px;
 
-  @include breakpoint(tablet) {
+  @media screen and (min-width: 768px) {
     width: calc(100% / 3);
     padding-right: 30px;
     margin: 0;
   }
 
-  @include breakpoint(desktop) {
+  @media screen and (min-width: 1440px) {
     width: 100%;
     padding-right: 0;
     margin-bottom: 30px;
@@ -185,12 +185,12 @@
 .filter__control {
   margin-top: 30px;
 
-  @include breakpoint(mobile) {
+  @media screen and (min-width: 640px) {
     display: flex;
     justify-content: center;
   }
 
-  @include breakpoint(tablet) {
+  @media screen and (min-width: 768px) {
     width: 100%;
     margin-top: 40px;
   }
@@ -201,13 +201,13 @@
   width: 100%;
   margin-bottom: 20px;
 
-  @include breakpoint(mobile) {
+  @media screen and (min-width: 640px) {
     width: auto;
     margin-right: 20px;
     margin-bottom: 0;
   }
 
-  @include breakpoint(desktop) {
+  @media screen and (min-width: 1440px) {
     flex: 1;
   }
 }
@@ -216,11 +216,11 @@
   display: block;
   width: 100%;
 
-  @include breakpoint(mobile) {
+  @media screen and (min-width: 640px) {
     width: auto;
   }
 
-  @include breakpoint(desktop) {
+  @media screen and (min-width: 1440px) {
     flex: 1;
   }
 }

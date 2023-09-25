@@ -6,19 +6,19 @@
   margin-left: auto;
   margin-right: auto;
 
-  @include breakpoint(tablet) {
+  @media screen and (min-width: 768px) {
     padding-top: 60px;
     padding-bottom: 0;
     transform: translateY(190px);
   }
 
-  @include breakpoint(desktop) {
+  @media screen and (min-width: 1440px) {
     padding-top: 30px;
     padding-bottom: 84px;
     transform: none;
   }
 
-  @include breakpoint(desktop) {
+  @media screen and (min-width: 1440px) {
     padding-bottom: 24px;
   }
 
@@ -58,7 +58,7 @@
     bottom: -5px;
     display: none;
 
-    @include breakpoint(desktop) {
+    @media screen and (min-width: 1440px) {
       display: block;
     }
   }
@@ -77,7 +77,7 @@
       transform-origin: center;
     }
 
-    @include breakpoint(tablet) {
+    @media screen and (min-width: 768px) {
       width: 80px;
     }
   }

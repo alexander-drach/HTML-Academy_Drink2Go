@@ -74,7 +74,7 @@ input[type="range"]::-moz-range-thumb {
 .range__track {
   margin-bottom: 24px;
 
-  @include breakpoint(tablet) {
+  @media screen and (min-width: 768px) {
     margin-bottom: 20px;
   }
 }

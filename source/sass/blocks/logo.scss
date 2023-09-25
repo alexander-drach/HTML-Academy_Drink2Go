@@ -9,13 +9,13 @@
     align-items: center;
     margin-right: auto;
 
-    @include breakpoint(tablet) {
+    @media screen and (min-width: 768px) {
       margin-right: 0;
     }
   }
 
   &--footer {
-    @include breakpoint(desktop) {
+    @media screen and (min-width: 1440px) {
       margin-bottom: 50px;
     }
   }
@@ -25,13 +25,13 @@
   flex-shrink: 0;
 
   &--header {
-    @include breakpoint(desktop) {
+    @media screen and (min-width: 1440px) {
       margin-right: 20px;
     }
   }
 
   &--footer {
-    @include breakpoint(desktop) {
+    @media screen and (min-width: 1440px) {
       margin-bottom: 10px;
     }
   }
@@ -40,7 +40,7 @@
 .logo__text {
   display: none;
 
-  @include breakpoint(desktop) {
+  @media screen and (min-width: 1440px) {
     display: block;
   }
 
