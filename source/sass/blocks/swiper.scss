@@ -18,9 +18,9 @@
     transform: none;
   }
 
-  @media screen and (min-width: 1440px) {
-    padding-bottom: 24px;
-  }
+  // @media screen and (min-width: 1440px) {
+  //   padding-bottom: 24px;
+  // }
 
   .swiper-pagination-bullet {
     position: relative;
@@ -55,7 +55,7 @@
   }
 
   .swiper-pagination {
-    bottom: -5px;
+    bottom: 60px;
     display: none;
 
     @media screen and (min-width: 1440px) {
@@ -67,7 +67,7 @@
   .swiper-button-next {
     width: 20px;
     height: 100%;
-    top: 20px;
+    top: 22px;
 
     &::after {
       content: "";
@@ -78,7 +78,13 @@
     }
 
     @media screen and (min-width: 768px) {
+      height: calc(100% - 188px);
       width: 80px;
+    }
+
+    @media screen and (min-width: 1440px) {
+      height: 100%;
+      top: 22px;
     }
   }
 
