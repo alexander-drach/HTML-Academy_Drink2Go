@@ -19,10 +19,6 @@
   background: none;
 }
 
-.range__track input[type="range"]:last-child {
-  // margin-top: -24px;
-}
-
 input[type="range"]::-webkit-slider-thumb {
   pointer-events: all;
 }
