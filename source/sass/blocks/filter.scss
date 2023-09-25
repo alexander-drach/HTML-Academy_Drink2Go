@@ -92,8 +92,14 @@
   margin-right: 10px;
 }
 
-.radio + label:hover::before {
-  background-color: $primary-lighter;
+.radio + label:hover::after {
+  background-color: $primary-opacity-0-25;
+  opacity: 1;
+}
+
+.radio:checked + label:hover::after {
+  background-color:$base-primary;
+  opacity: 1;
 }
 
 .radio + label:after {
