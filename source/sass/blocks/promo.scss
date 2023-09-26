@@ -55,6 +55,18 @@
   }
 }
 
+.promo__thumb img {
+  max-width: 280px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 476px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    max-width: 600px;
+  }
+}
+
 .promo__content {
   @media screen and (min-width: 1440px) {
     margin-bottom: 17px;
