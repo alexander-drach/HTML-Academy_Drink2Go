@@ -7,14 +7,14 @@
   margin-right: auto;
 
   @media screen and (min-width: 768px) {
-    padding-top: 60px;
+    padding-top: 57px;
     padding-bottom: 0;
     transform: translateY(190px);
   }
 
   @media screen and (min-width: 1440px) {
     padding-top: 30px;
-    padding-bottom: 84px;
+    padding-bottom: 79px;
     transform: none;
   }
 
@@ -55,7 +55,7 @@
   }
 
   .swiper-pagination {
-    bottom: 60px;
+    bottom: 56px;
     display: none;
 
     @media screen and (min-width: 1440px) {
