@@ -3,9 +3,17 @@ const humb = document.querySelector('.humb');
 const header = document.querySelector('.page-header');
 const nav = document.querySelector('.nav');
 
-if (window.matchMedia("(max-width: 640px)").matches) {
-  nav.classList.add('mobile-menu')
+const addClassMobileMenu = () => {
+  if (window.matchMedia("(max-width: 640px)").matches) {
+    nav.classList.add('mobile-menu');
+  } else {
+    nav.classList.remove('mobile-menu')
+  }
 }
+
+addClassMobileMenu();
+
+window.addEventListener("resize", addClassMobileMenu);
 
 humb.addEventListener('click', () => {
   header.classList.toggle('open-menu');
