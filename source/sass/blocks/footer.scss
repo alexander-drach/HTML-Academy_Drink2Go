@@ -69,7 +69,7 @@
     @media screen and (min-width: 768px) {
       width: 100%;
       padding-right: 0;
-      margin-bottom: 30px;
+      margin-bottom: 28px;
     }
 
     @media screen and (min-width: 1440px) {
@@ -115,10 +115,6 @@
   color: $base-primary;
   margin-top: 0;
   margin-bottom: 12px;
-
-  // @media screen and (min-width: 1440px) {
-  //   margin-bottom: 15px;
-  // }
 }
 
 .footer-menu {
