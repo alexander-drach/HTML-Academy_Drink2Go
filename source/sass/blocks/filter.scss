@@ -1,5 +1,5 @@
 .filter {
-  margin-bottom: 36px;
+  margin-bottom: 38px;
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -24,7 +24,7 @@
 .filter__group {
   border: none;
   padding: 0;
-  margin-bottom: 34px;
+  margin-bottom: 30px;
 
   @media screen and (min-width: 768px) {
     width: calc(100% / 3);
@@ -48,7 +48,7 @@
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 }
 
 .radio-item {
@@ -84,8 +84,8 @@
 .radio + label::before {
   content: "";
   flex-shrink: 0;
-  width: 24px;
-  height: 24px;
+  width: 22px;
+  height: 22px;
   background-color: $base-white;
   border: 2px solid $base-grey;
   border-radius: 50%;

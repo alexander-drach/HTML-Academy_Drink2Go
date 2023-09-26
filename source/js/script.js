@@ -21,30 +21,6 @@ const swiper = new Swiper('.swiper', {
   },
 });
 
-/* range */
-const sliders = document.querySelectorAll('input[type="range"]');
-const valueRangeFrom = document.getElementById('range-from');
-const valueRangeTo = document.getElementById('range-to');
-
-sliders[0].addEventListener('input', (e) => {
-  if (+sliders[0].value > +sliders[1].value) {
-    sliders[1].value = +sliders[0].value;
-  }
-});
-
-sliders[1].addEventListener('input', (e) => {
-  if (+sliders[1].value < +sliders[0].value) {
-    sliders[0].value = +sliders[1].value;
-  }
-});
-
-sliders.forEach((slider) => {
-  slider.addEventListener('change', () => {
-    valueRangeFrom.value = sliders[0].value;
-    valueRangeTo.value = sliders[1].value;
-  })
-});
-
 /* map */
 let geo_lon = 59.9684;
 let geo_lat = 30.3176;

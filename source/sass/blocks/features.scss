@@ -1,6 +1,6 @@
 .features-section {
   padding-top: 50px;
-  padding-bottom: 60px;
+  padding-bottom: 45px;
 
   @media screen and (min-width: 768px) {
     padding-top: 60px;
@@ -14,7 +14,7 @@
 }
 
 .features-section .title-section {
-  margin-bottom: 36px;
+  margin-bottom: 35px;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 60px;
@@ -58,6 +58,10 @@
     text-align: center;
     width: calc((100% / 4) - 30px);
   }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .features__item p {
@@ -65,7 +69,7 @@
 }
 
 .features__icon {
-  margin-bottom: 10px;
+  margin-bottom: 6px;
   flex-shrink: 0;
 
   @media screen and (min-width: 768px) {
@@ -85,14 +89,16 @@
 
 .features__title {
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 4px;
+  line-height: 32px;
 }
 
 .features__desc {
   font-size: 14px;
-  line-height: 24px;
+  line-height: 20px;
 
   @media screen and (min-width: 768px) {
     font-size: 16px;
+    line-height: 24px;
   }
 }
