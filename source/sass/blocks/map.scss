@@ -6,15 +6,27 @@
   background-position: center;
   background-image: url("../../img/map-bg-mobile.png");
 
+  @supports (background-image: url("../../img/map-bg-mobile.webp")) {
+    background-image: url("../../img/map-bg-mobile.webp");
+  }
+
   @media screen and (min-width: 768px) {
     margin-bottom: 42px;
     height: 480px;
     background-image: url("../../img/map-bg-tablet.png");
+
+    @supports (background-image: url("../../img/map-bg-tablet.webp")) {
+      background-image: url("../../img/map-bg-tablet.webp");
+    }
   }
 
   @media screen and (min-width: 1440px) {
     margin-bottom: 40px;
     height: 540px;
     background-image: url("../../img/map-bg-desktop.png");
+
+    @supports (background-image: url("../../img/map-bg-desktop.webp")) {
+      background-image: url("../../img/map-bg-desktop.webp");
+    }
   }
 }
