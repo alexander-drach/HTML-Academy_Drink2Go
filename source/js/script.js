@@ -4,7 +4,7 @@ const header = document.querySelector('.page-header');
 const nav = document.querySelector('.nav');
 
 const addClassMobileMenu = () => {
-  if (window.matchMedia("(max-width: 640px)").matches) {
+  if (window.matchMedia("(max-width: 768px)").matches) {
     nav.classList.add('mobile-menu');
   } else {
     nav.classList.remove('mobile-menu')
